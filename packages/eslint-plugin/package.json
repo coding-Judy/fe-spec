@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "description": "自定义的eslint插件",
   "scripts": {
     "test": "jest",

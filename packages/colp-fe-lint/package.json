@@ -1,6 +1,6 @@
 {
-  "name": "fe-lint",
-  "version": "0.0.1",
+  "name": "colp-fe-lint",
+  "version": "1.0.0",
   "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -19,7 +19,7 @@
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   },
   "keywords": [
-    "encode",
+    "colp",
     "lint",
     "cli"
   ],
@@ -71,6 +71,7 @@
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
     "markdownlint": "^0.25.1",
+    "markdownlint-config-encode": "^1.0.8",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
     "prettier": "^2.2.1",
@@ -81,7 +82,7 @@
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   },
-  "author": "chenghuai",
+  "author": "Judy",
   "homepage": "https://github.com/conding-Judy/fe-spec#readme",
   "license": "ISC",
   "repository": {

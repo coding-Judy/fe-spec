@@ -42,7 +42,7 @@ export default defineConfig4CustomTheme({
       },
       {
         text: '脚手架',
-        items: [{ text: '-fe-lint', link: '/cli/fe-lint.md' }],
+        items: [{ text: 'colp-fe-lint', link: '/cli/colp-fe-lint.md' }],
       },
     ],
     sidebar: [
@@ -100,7 +100,7 @@ export default defineConfig4CustomTheme({
       },
       {
         title: '脚手架',
-        children: [{ title: 'fe-lint', path: '/cli/fe-lint.md' }],
+        children: [{ title: 'colp-fe-lint', path: '/cli/colp-fe-lint.md' }],
       },
     ],
     logo: '/img/logo.png',

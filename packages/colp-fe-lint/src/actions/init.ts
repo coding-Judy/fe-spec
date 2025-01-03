@@ -5,10 +5,10 @@ import path from 'path';
 import { InitOptions, PKG } from '../types';
 import conflictResolve from '../utils/conflict-resolve';
 import { PKG_NAME, PROJECT_TYPES } from '../utils/constants';
+import generateTemplate from '../utils/generate-template';
 import log from '../utils/log';
 import npmType from '../utils/npm-type';
 import update from './update';
-import generateTemplate from '../utils/generate-template';
 let step = 0;
 /**
  * 选择项目语言和框架
@@ -20,6 +20,7 @@ const chooseEslintType = async (): Promise<string> => {
     message: `Step ${++step}. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：`,
     choices: PROJECT_TYPES,
   });
+  return type;
 };
 /**
  * 选择是否启用 stylelint
@@ -139,8 +140,8 @@ export default async (options: InitOptions) => {
 
   //配置 commit 卡点
   log.info(`Step ${++step}. 配置 git commit 卡点`);
-  if(!pkg.husky) pkg.husky = {};
-  if(!pkg.husky.hooks) pkg.husky.hooks = {};
+  if (!pkg.husky) pkg.husky = {};
+  if (!pkg.husky.hooks) pkg.husky.hooks = {};
   pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
   pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`;
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));

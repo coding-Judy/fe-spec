@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config",
+  "name": "eslint-config-colp",
   "version": "1.0.0",
   "main": "index.js",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
-    "encode",
+    "colp",
     "javaScript",
     "typescript",
     "node",

@@ -1,8 +1,8 @@
 {
-  "name": "fe-markdownlint-config",
-  "version": "0.0.1",
+  "name": "markdownlint-config-colp",
+  "version": "1.0.0",
   "main": "index.json",
-  "description": "印客学院 文档规范",
+  "description": "文档规范",
   "keywords": [
     "encode",
     "markdown",

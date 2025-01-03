@@ -46,9 +46,9 @@ features:
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [markdownlint-config](https://www.npmjs.com/package/markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin](https://www.npmjs.com/package/eslint-plugin)             |
 
-[fe-lint](https://www.npmjs.com/package/fe-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+[colp-fe-lint](https://www.npmjs.com/package/colp-fe-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
-您可以使用[fe-lint](https://www.npmjs.com/package/fe-lint) 方便地为项目接入全部规范。
+您可以使用[colp-fe-lint](https://www.npmjs.com/package/colp-fe-lint) 方便地为项目接入全部规范。
 
 </br>
 

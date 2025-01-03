@@ -43,7 +43,7 @@ export interface ScanOptions {
   fix?: boolean;
   //生成报告文件
   outputReport?: boolean;
-  //scan 时指定fe-lint config ，优先级高于 fe-lint.config.js
+  //scan 时指定colp-fe-lint config ，优先级高于 colp-fe-lint.config.js
   config?: Config;
 }
 export interface ScanResult {
@@ -69,7 +69,7 @@ export interface ScanReport {
 }
 export interface InitOptions {
   cwd: string;
-  // 是否检查并升级 encode-fe-lint 的版本
+  // 是否检查并升级 encode-colp-fe-lint 的版本
   checkVersionUpdate: boolean;
   // 是否需要自动重写 lint 配置
   rewriteConfig?: boolean;

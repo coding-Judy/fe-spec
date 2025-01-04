@@ -31,7 +31,7 @@ describe('init', () => {
     expect(settings.test).toBeTruthy();
   });
 
-  // afterEach(() => {
-  //   fs.removeSync(outputPath);
-  // });
+  afterEach(() => {
+    fs.removeSync(outputPath);
+  });
 });

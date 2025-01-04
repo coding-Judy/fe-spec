@@ -1,3 +1,11 @@
+/*
+ * @Author: conglongping 1010578148@qq.com
+ * @Date: 2025-01-02 20:30:10
+ * @LastEditors: conglongping 1010578148@qq.com
+ * @LastEditTime: 2025-01-03 21:37:29
+ * @FilePath: \demo\packages\colp-fe-lint\src\utils\generate-template.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import ejs from 'ejs';
 import fs from 'fs-extra';
 import glob from 'glob';
@@ -10,8 +18,13 @@ import {
   STYLELINT_IGNORE_PATTERN,
 } from './constants';
 
+/**
+ * vscode 配置合并
+ * @param filepath
+ * @param content
+ */
 const mergeVSCodeConfig = (filepath: string, content: string) => {
-  ///不需要merge
+  // 不需要 merge
   if (!fs.existsSync(filepath)) return content;
 
   try {
@@ -27,18 +40,23 @@ const mergeVSCodeConfig = (filepath: string, content: string) => {
       2,
     );
   } catch (e) {
-    return '';
+    console.log(e, 'e');
+    return 'e';
   }
 };
+
+/**
+ * 实例化模板
+ * @param cwd
+ * @param data
+ * @param vscode
+ */
 export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
-  ///要生成的模板路径
   const templatePath = path.resolve(__dirname, '../config');
-  ///获取要生成的文件的ejs文件
   const templates = glob.sync(`${vscode ? '_vscode' : '**'}/*.ejs`, { cwd: templatePath });
   for (const name of templates) {
-    //写入项目中文件路径
     const filepath = path.resolve(cwd, name.replace(/\.ejs$/, '').replace(/^_/, '.'));
-    let content = ejs.render(fs.readFileSync(path.join(templatePath, name), 'utf-8'), {
+    let content = ejs.render(fs.readFileSync(path.resolve(templatePath, name), 'utf8'), {
       eslintIgnores: ESLINT_IGNORE_PATTERN,
       stylelintExt: STYLELINT_FILE_EXT,
       stylelintIgnores: STYLELINT_IGNORE_PATTERN,
@@ -51,8 +69,9 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
       content = mergeVSCodeConfig(filepath, content);
     }
 
-    //跳过空文件
+    // 跳过空文件
     if (!content.trim()) continue;
+
     fs.outputFileSync(filepath, content, 'utf8');
   }
 };

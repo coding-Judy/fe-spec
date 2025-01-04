@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-colp",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "main": "index.js",
   "description": "JavaScript TypeScript Node 规范",
   "keywords": [
@@ -15,7 +15,7 @@
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
-  "author": "Judy",
+  "author": "chenghuai",
   "homepage": "https://github.com/coding-Judy/fe-spec#readme",
   "license": "ISC",
   "repository": {

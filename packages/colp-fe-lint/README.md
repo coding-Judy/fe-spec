@@ -1,6 +1,6 @@
-# encode-colp-fe-lint
+# colp-fe-lint
 
-`encode-colp-fe-lint` 是[印客学院 前端编码规范工程化](https://encode-studio-fe.github.io/fe-spec/)的配套 Lint 工具，可以为项目一键接入规约、一键扫描和修复规约问题，保障项目的编码规范和代码质量。
+`colp-fe-lint` 是[印客学院 前端编码规范工程化](https://encode-studio-fe.github.io/fe-spec/)的配套 Lint 工具，可以为项目一键接入规约、一键扫描和修复规约问题，保障项目的编码规范和代码质量。
 
 ## 背景
 

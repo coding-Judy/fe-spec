@@ -69,7 +69,7 @@ export interface ScanReport {
 }
 export interface InitOptions {
   cwd: string;
-  // 是否检查并升级 encode-colp-fe-lint 的版本
+  // 是否检查并升级 colp-fe-lint 的版本
   checkVersionUpdate: boolean;
   // 是否需要自动重写 lint 配置
   rewriteConfig?: boolean;

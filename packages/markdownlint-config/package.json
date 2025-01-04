@@ -4,11 +4,11 @@
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
-    "encode",
+    "colp",
     "markdown",
     "lint"
   ],
-  "author": "chenghuai",
+  "author": "Judy",
   "homepage": "https://github.com/coding-Judy/fe-spec#readme",
   "license": "ISC",
   "repository": {

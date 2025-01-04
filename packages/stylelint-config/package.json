@@ -1,10 +1,10 @@
 {
-  "name": "stylelint-config",
+  "name": "stylelint-config-colp",
   "version": "1.0.0",
   "description": "CSS规范",
   "main": "index.js",
   "keywords": [
-    "encode",
+    "colp",
     "style",
     "lint"
   ],

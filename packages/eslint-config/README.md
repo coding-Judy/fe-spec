@@ -1,10 +1,10 @@
-# eslint-config
+# eslint-config-encode
 
 > 印客学院 JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 
-## JavaScript 项目 - eslint-config
+## JavaScript 项目 - eslint-config-encode
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 
@@ -17,18 +17,18 @@
 ### 安装
 
 ```shell
-npm i -D eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
+npm i -D eslint-config-encode @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config"]
+  "extends": ["eslint-config-encode"]
 }
 ```
 
-## JavaScript + React 项目 - eslint-config/react
+## JavaScript + React 项目 - eslint-config-encode/react
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
@@ -44,14 +44,14 @@ npm i -D eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
 ### 安装
 
 ```shell
-npm i -D eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
+npm i -D eslint-config-encode @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config/react"]
+  "extends": ["eslint-config-encode/react"]
 }
 ```
 
@@ -63,7 +63,7 @@ npm i -D eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["eslint-config/react", "eslint-config/jsx-a11y"]
+  "extends": ["eslint-config-encode/react", "eslint-config-encode/jsx-a11y"]
 }
 ```
 

@@ -115,7 +115,7 @@ export default defineConfig4CustomTheme({
 
     extendFrontmatter: {
       author: {
-        name: '澄怀',
+        name: 'Judy',
         link: 'https://github.com/coding-Judy/fe-sepc',
       },
     },

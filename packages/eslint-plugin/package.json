@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin",
+  "name": "eslint-plugin-colp",
   "version": "1.0.0",
   "description": "自定义的eslint插件",
   "scripts": {

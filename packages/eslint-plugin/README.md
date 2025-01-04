@@ -1,4 +1,4 @@
-# eslint-plugin-encode
+# eslint-plugin-colp
 
 ## 安装
 
@@ -15,7 +15,7 @@ $ npm install eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['eslint-config-colp'],
   rules: {
     'eslint-plugin/no-secret-info': 'error',
   },
@@ -27,7 +27,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:eslint-plugin-encode/recommended',
+  extends: 'plugin:eslint-plugin-colp/recommended',
 };
 ```
 

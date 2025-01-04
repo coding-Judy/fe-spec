@@ -1,8 +1,9 @@
 {
   "name": "fe-spec",
   "private": true,
+  "version": "1.0.0",
   "description": "前端编码规范工程化",
-   "scripts": {
+  "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install ",
     "init": "pnpm install",

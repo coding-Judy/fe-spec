@@ -71,7 +71,7 @@
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
     "markdownlint": "^0.25.1",
-    "markdownlint-config-encode": "^1.0.8",
+    "markdownlint-config-colp": "^1.0.0",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
     "prettier": "^2.2.1",
@@ -91,5 +91,6 @@
   },
   "bugs": {
     "url": "https://github.com/conding-Judy/fe-spec/issues"
-  }
+  },
+  "gitHead": "c60f71b4c632f77f74bed10047826e2b697778cb"
 }

@@ -5,14 +5,14 @@ categories:
 tags:
   - 工程规范
 author:
-  name: 澄怀
+  name: Judy
   link: https://github.com/coding-Judy/fe-spec
 ---
 
 # stylelint-config
 
 :::tip
-印客学院 CSS 规范
+ CSS 规范
 :::
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。

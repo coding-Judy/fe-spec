@@ -1,10 +1,10 @@
-# eslint-config-encode
+# eslint-config-colp
 
-> 印客学院 JavaScript TypeScript Node 规范
+> JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 
-## JavaScript 项目 - eslint-config-encode
+## JavaScript 项目 - eslint-config-colp
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 

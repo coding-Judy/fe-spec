@@ -5,7 +5,7 @@ categories:
 tags:
   - 工程规范
 author:
-  name: 澄怀
+  name: Judy
   link: https://github.com/coding-Judy/fe-spec
 ---
 
